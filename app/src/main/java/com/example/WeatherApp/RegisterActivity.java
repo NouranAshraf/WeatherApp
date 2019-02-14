@@ -81,6 +81,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     Intent Intent2 =new Intent(RegisterActivity.this,LoginActivity.class);
                     startActivity(Intent2);
                 } else {
+                    Toast.makeText(getApplicationContext(),task.getException().getMessage(),Toast.LENGTH_SHORT).show();
 
                     Toast.makeText(RegisterActivity.this, "could not register.Please try again", Toast.LENGTH_SHORT).show();
 

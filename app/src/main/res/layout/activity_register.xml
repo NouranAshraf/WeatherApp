@@ -4,35 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-
+    tools:context=".RegisterActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#66cdaa"
         android:gravity="center"
         android:orientation="vertical">
 
+
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:id="@+id/imageView1"
+            android:layout_width="170dp"
+            android:layout_height="143dp"
             android:layout_gravity="center_horizontal|top"
-            app:srcCompat="@drawable/login" />
+            app:srcCompat="@drawable/signup" />
 
         <TextView
-            android:id="@+id/TextView3"
+            android:id="@+id/TextView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Log In"
+            android:text="Sign Up"
             android:textColor="@android:color/background_light"
             android:textSize="30dp"
             android:textStyle="bold" />
 
+        <!--<EditText-->
+            <!--android:id="@+id/Username"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ems="10"-->
+            <!--android:hint="Username"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:textColorHint="@android:color/background_light" />-->
+
         <EditText
-            android:id="@+id/Email2"
+            android:id="@+id/Email1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -41,7 +49,7 @@
             android:textColorHint="@android:color/background_light" />
 
         <EditText
-            android:id="@+id/Password2"
+            android:id="@+id/Password1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -50,35 +58,29 @@
             android:textColorHint="@android:color/background_light" />
 
         <Button
-            android:id="@+id/SignIn"
+            android:id="@+id/Register"
             android:layout_width="226dp"
             android:layout_height="wrap_content"
             android:background="#00ff7f"
-            android:text="Sign In"
-            android:textColor="@android:color/background_light" />
+            android:text="Register"
+            android:textColor="@android:color/background_light"/>
 
         <TextView
-            android:id="@+id/TextView4"
+            android:id="@+id/TextView2"
             android:layout_width="wrap_content"
             android:layout_height="42dp"
-            android:text="Don't Have an Account?"
+            android:text="Already have an account?"
             android:textColor="@android:color/background_light"
-            android:textSize="15dp"
-            android:textStyle="bold|italic" />
-
+            android:textStyle="bold|italic"
+            android:textSize="15dp"/>
 
         <Button
-            android:id="@+id/SignUp"
+            android:id="@+id/LogIn"
             android:layout_width="226dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|bottom"
             android:background="#00ff7f"
-            android:text="Sign Up"
-            android:textColor="@android:color/background_light" />
-
-
+            android:text="Log In  "
+            android:textColor="@android:color/background_light"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
-
-
